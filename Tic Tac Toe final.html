@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app='tttApp'>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.16/angular.min.js"></script>
+	<script src="Tic Tac Toe final.js"></script>
+	<link rel="stylesheet" href="Tic Tac Toe final.css"/>
+	<script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
+</head>
+
+
+
+
+<body x-ng-controller='tttController'>
+
+
+<div id="movie" style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  <iframe frameborder="0" height="100%" width="100%" 
+    src="https://youtube.com/embed/jVD67pMdv9k?autoplay=1&controls=0&showinfo=0&autohide=1">
+  </iframe>
+</div>
+
+<h1>Tic Tac Toe</h1>
+
+	<div class="gameboard">
+		
+		<br></br>
+
+		<div class="squares" 
+		x-ng-repeat="b in board track by $index"x-ng-click="clicker($index)">
+		{{ b }}
+		</div>
+		<button type="reset" value="reset" x-ng-click ="newGame()">Reset</button>
+
+	</div>
+
+
+
+</body>
+</html>

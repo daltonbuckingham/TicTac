@@ -1,0 +1,47 @@
+#movie {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background-size: cover;
+overflow: auto;
+}
+
+
+
+
+h1 {
+	text-align: center;
+	color: white;
+	margin: auto 0;
+}
+
+button {
+float: right;
+position: relative;
+bottom: 415px;
+left: 15.4px;
+width: 60px;
+height: 60px;
+}
+
+
+
+
+.squares {
+text-align: center;
+font-size: 100px;
+float: left;
+width: 150px;
+height: 150px;
+background-color: white;
+border: 1px solid black;
+border-radius: 10px;
+}
+
+.gameboard {
+	width: 500px;
+	margin: 0 auto;
+	opacity: .7;
+
+}
+
